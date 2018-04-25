@@ -1,14 +1,13 @@
-const clock = document.getElementById('clock')
+const clock = document.getElementById("clock");
 
 var loader = ' <div class="lds-heart"><div></div></div>';
 
-
-
 window.onload = () => {
   setInterval(() => {
-    clock.innerHTML = Date() 
-    + `     <a href="#" class="button">Come in</a>`
-  }, 1000)
+    clock.innerHTML = Date();
+  }, 1000);
 };
 
-
+setInterval(()=>{
+  window.location.href = "profile.html";
+}, 4000);
